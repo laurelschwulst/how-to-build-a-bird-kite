@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 100px 25px;
+  font-size: 20px;
+  background: white;
+  color: black;
+  line-height: 1.55;
+}
+
+.content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+p,
+blockquote {
+  margin: 1.75em 0;
+}
+
+ul {
+  padding-left: 1em;
+}
+
+li {
+  padding-left: 0.5em;
+}
+
+strong,
+b {
+  font-weight: normal;
+  border: 1px dotted black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  font-weight: normal;
+  background: white;
+  color: black;
+  display: inline-block;
+  padding: 4px 8px 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4.5em;
+  display: block;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.35;
+}
+
+.invisible {
+  display: none;
+}
+
+.meta {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.chimes {
+  text-align: center;
+  margin: 2.5em 0;
+}
+
+.audio-container,
+.video-container {
+  text-align: center;
+}
+
+blockquote {
+  margin-left: 0;
+}
+
+figure,
+.spring,
+.figure-container {
+  margin: 2em auto;
+}
+
+figure {
+  text-align: center;
+  display: block;
+}
+
+/* figure.border {
+  border: 1px solid rgba(0,0,0,0.25);
+} */
+
+figure.outline {
+  border: 1px solid rgba(0,0,0,0.25);
+}
+
+figure.small {
+  max-width: 375px;
+}
+
+figure.medium-small {
+  max-width: 650px;
+}
+
+figure.medium {
+  max-width: calc(50% - 0.25em);
+  display: inline-block;
+}
+
+figure.medium-large {
+  max-width: 810px;
+}
+
+.figure-container {
+  display: flex;
+}
+
+.figure-container figure {
+  margin: 0;
+}
+
+.figure-container figure.medium:nth-child(1) {
+  margin-right: 0.25em;
+}
+
+.figure-container figure.medium:nth-child(2) {
+  margin-left: 0.25em;
+}
+
+section {
+  margin: 100px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav#contents {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+.html {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 0.75em;
+}
+
+.spring {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.spring a.image {
+  width: 20%;
+  position: relative;
+  padding: .8rem;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #aaa;
+  text-decoration: none;
+  text-align: center;
+  cursor: default;
+}
+
+.spring a.image .thumbnail {
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1.3rem;
+  cursor: zoom-in;
+}
+
+.spring a.image .thumbnail .container {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 640px) {
+
+}
