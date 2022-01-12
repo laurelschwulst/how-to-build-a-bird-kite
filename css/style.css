@@ -201,6 +201,12 @@ nav#contents {
   animation-iteration-count: infinite;
 }
 
+.leaf {
+  display: inline-block;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
 @keyframes lineheightbreathing {
   from {
     line-height: 0.55
@@ -216,6 +222,33 @@ nav#contents {
   }
   to {
     letter-spacing: 0.05px;
+  }
+}
+
+@keyframes leaf-X {
+  from {
+    transform: translateX(-3px)
+  }
+  to {
+    transform: translateX(3px)
+  }
+}
+
+@keyframes leaf-Y {
+  from {
+    transform: translateY(-2px)
+  }
+  to {
+    transform: translateY(2px)
+  }
+}
+
+@keyframes leaf-Rotate {
+  from {
+    transform: rotate(-2deg)
+  }
+  to {
+    transform: rotate(2deg)
   }
 }
 
