@@ -179,6 +179,6 @@ document.addEventListener('keydown', throttledKeyEvent);
 
 
 function start() {
-    setInterval(iterate, 100)
+    setInterval(iterate, 50)
 }
-// start();
+start();
