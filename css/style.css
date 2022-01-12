@@ -190,6 +190,35 @@ nav#contents {
   align-items: center;
 }
 
+.dithered-image {
+  white-space: pre;
+  font-size: 1.8px;
+  line-height: 0.6;
+  text-align: center;
+  animation-name: characterspacebreathing;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes lineheightbreathing {
+  from {
+    line-height: 0.55
+  }
+  to {
+    line-height: 0.65
+  }
+}
+
+@keyframes characterspacebreathing {
+  from {
+    letter-spacing: -0.05px;
+  }
+  to {
+    letter-spacing: 0.05px;
+  }
+}
+
 
 @media screen and (max-width: 640px) {
 
