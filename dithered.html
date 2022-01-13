@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav id="contents">
+    <select name="nav" onchange="location = this.value;">
+      <option value="">Menu</option>
+      <option value="#preamble">Preamble</option>
+      <option value="#one">1. Gather your materials</option>
+      <option value="#two">2. Set up your working area, “mise en place”</option>
+      <option value="#three">3. Fold the plastic in half</option>
+      <option value="#four">4. Draw half the bird shape on the plastic</option>
+      <option value="#five">5. Cut out the bird from the plastic</option>
+      <option value="#six">6. Apply your dowels to the bird</option>
+      <option value="#seven">7. Tie a string wingtip to wingtip</option>
+      <option value="#eight">8. Add the bird’s extended tail</option>
+      <option value="#nine">9. Gather all your materials & bird</option>
+      <option value="#ten">10. Find a good place to fly & go!</option>
+      <option value="#eleven">11. Apply kite string to the bird</option>
+      <option value="#twelve">12. Try flying your bird kite and adjust as necessary</option>
+    </select>
+  </nav>
+
+  <div id="music-controls">
+    <button id="music-button">Music <span id="music-status">Off</span></button>
+    <audio id="music" loop preload="none" src="music/wind-by-will-karmis.mp3"></audio>
+    <script>
+      var myAudio = document.querySelector('#music');
+      var musicStatus = document.querySelector('#music-status')
+      document.querySelector('#music-button').addEventListener('click', function(event) {
+        if (myAudio.paused) {
+          myAudio.play();
+          musicStatus.innerHTML = 'On';
+        } else {
+          myAudio.pause();
+          musicStatus.innerHTML = 'Off';
+        }
+      });
+    </script>
+  </div>
+
+  <div class="html">
+    [ HTML version ]
+    <a href="https://www.nytimes.com/interactive/2021/05/19/style/how-to-build-a-bird-kite.html" target="_blank">[ NYT version ]</a>
+  </div>
+
+  <main>
+
+  <h1>How to Build a Bird Kite</h1>
+  <div class="meta">by Laurel Schwulst</div>
+
+  <figure class="large" style="margin-top: 0;">
+    <img src="images/_birdkite-dithered.png">
+  </figure>
+  <section id="preamble">
+    <div class="content">
+      <h2 class="invisible">Preamble</h2>
+      <p>
+        Behold the bird kite.
+      </p>
+      <p>
+        This one I created from common materials available at most hardware stores. I made it with: plastic, wooden dowels, electrical tape and string … with a little help from scissors and a permanent marker. (We’ll go over these materials more in
+        detail in the next step.)
+      </p>
+      <p>
+        You can think of this tutorial like a recipe. Recipes are step-by-step instructions but they are also adaptable. So even though recipes present a sequence, cooking is never a rote process — it requires your active engagement. The best food,
+        just like the best design or art, isn’t formulaic.
+      </p>
+      <p>
+        That said, it’s a good idea to experience a recipe or tutorial in full before you dive in. That way, you get a holistic sense of the creation and the dynamic forces at play.
+      </p>
+      <p>
+        Just as recipes are dependent on what food is available or in season, kites are dependent on specific exterior, dynamic forces, too:
+      </p>
+      <p>
+        Your kite will change based on:
+      </p>
+      <ul>
+        <li style="margin-bottom: 1em;">
+          the quality of the wind<br>
+          … on the day you fly
+        </li>
+        <li style="margin-bottom: 1em;">
+          the type of materials you use<br>
+          (based on your personal preference)
+        </li>
+        <p>
+          and
+        </p>
+        <li>
+          your presence and care<br>
+          while crafting the kite
+        </li>
+      </ul>
+      <p>
+        It’s also possible that you might need to adapt your design on the fly. So as I said before, I’d recommend thinking about how every aspect — from the kite’s constituent parts to its environment — is connected … before you begin.
+      </p>
+      <p>
+        So let’s get into it!
+      </p>
+    </div>
+  </section>
+
+  <section id="one">
+    <div class="content">
+      <h2>Step 1.<br> Gather your materials</h2>
+      <p>
+        Let's go to a hardware store to get most of the materials.
+      </p>
+      <p>
+        You’ll need:
+      </p>
+      <ul>
+        <li style="margin-bottom: 1em;">
+          <b>plastic</b><br>
+          Look for a good medium-grade plastic. For example, I like using “mattress bags” because I like a transparent look. Technically, you’ll want something of medium thickness, about “1 mil” or sometimes called “2 ply.” Feel free to experiment —
+          you could use a painter’s tarp, garbage bags or a plastic tablecloth, for example — as long as the plastic is roughly medium grade and doesn’t have holes.
+        </li>
+        <li style="margin-bottom: 1em;">
+          <b>wooden dowels</b><br>
+          I’d recommend the thinnest dowels you can find — usually 1/8 inch in diameter. Try to get long ones. At least 48 inches long is ideal. You’ll definitely need 4 dowels for this design, but I would obtain 5, just in case one breaks.
+        </li>
+        <li style="margin-bottom: 1em;">
+          <b>electrical tape</b><br>
+          Any electrical tape will do since it’s weather resistant and elastic. (Note that most regular tape is brittle and becomes unusable if it gets wet.) Feel free to use nice bright-colored electrical tape, maybe of a color that looks good with
+          your plastic.
+        </li>
+        <p>
+          You’ll see me heading to the checkout counter now because I already have <b>scissors</b> and a <b>permanent marker</b> at home.
+        </p>
+        <p>
+          The final item is <b>kite string</b>. This, I ordered online.
+        </p>
+        <li style="margin-bottom: 1em;">
+          <b>kite string</b><br>
+          When searching for kite string, look for 30-50lb nylon or dacron flying line. Usually the string comes on a kite spool for easy flying. Technically, you don’t need that but it’s a very useful bonus. If you can’t find kite string, really any
+          old lightweight string will do. Just make sure it is lengthy enough to allow your kite lots of flying room.
+        </li>
+      </ul>
+      <p class="chimes">
+        * * *
+      </p>
+      <p class="side-b">
+        While we gather our materials, it’s important to keep in the back of our minds that kites are nothing without one essential component, the *wind*. And this is one material we cannot simply go to the store and buy …
+      </p>
+      <p class="side-b">
+        In that way, wind is both the most magical and mysterious ingredient. It’s invisible yet animating, and often much stronger than it seems.
+      </p>
+      <p class="side-b">
+        Think, for example, of the trees and rocks and many other parts of the natural environment that have slowly changed form because of the wind.
+      </p>
+      <p class="side-b">
+        In <i>Heaven’s Breath: A Natural History of the Wind</i>, a book first published in 1984, the author Lyall Watson writes that wind has “this mysterious power—invisible yet tangible, existing nowhere yet everywhere,” a power that lends itself
+        easily to “our first experience of the spiritual.” Many religions place winds in their myths—specifically at the beginning and ending of all things.
+      </p>
+      <p class="side-b">
+        I think wind is a good teacher: It’s mystical and ever-changing qualities prepare us for the many other mysterious forces in our lives that we have no control over. We can learn to properly navigate within and despite these forces. And maybe
+        we can even do some things we never thought possible before.
+      </p>
+      <p class="side-b">
+        But back to kites. I like kites because they remind me of wind. When creating kites, I always have the wind in the back of my mind…
+      </p>
+    </div>
+  </section>
+
+  <section id="two">
+    <div class="content">
+      <h2>Step 2. <br>Set up your working area, “mise en place”</h2>
+      <p>
+        The French have this culinary term, “mise en place,” which essentially means “setting up” or “everything in its place.” It’s about getting all of your ingredients and cooking utensils in order before cooking a meal.
+      </p>
+      <p>
+        In any creative endeavor, it’s also important to begin by setting up a good environment.
+      </p>
+      <p>
+        First, clear a nice area on the floor or on a large table. Make sure there are no scraps or debris that could get in the way of your construction. Sweep them away.
+      </p>
+      <p>
+        Then, gather your kite materials and arrange them neatly so they’re easy to access.
+      </p>
+      <p>
+        You might also consider readying your mind and body too. Pour yourself a glass of water in case you get thirsty. You could also put on some music (or calming background noise) if you like. I recommend whatever helps you focus … maybe
+        something calm with some levity. Here are some to get you started…
+      </p>
+      <p>
+        [[insert YouTube music embeds: Music for Airports by Brian Eno (1978), Huntington Ashram Monastery by Alice Coltrane (1969), starting with my favorite track “Turiya”, Relaxing Wind Chime Sounds by YouTube user CHRIS10077, laurel’s writing mix
+        (can convert to YouTube from Soundcloud if you want) by dj python (2019)]]
+      </p>
+      <p>
+        But don’t skip the mise en place. The creation of your environment is just as important as the creation of the thing itself. Readying your environment encourages a focused, improvisational state.
+      </p>
+      <p class="chimes">
+        * * *
+      </p>
+      <p class="side-b">
+        This stage of the process calls to mind the term “cybernetics,” which can be defined as the science of feedback. More specifically, it’s the transdisciplinary study of regulatory systems and feedback loops across technical, social, and
+        cultural systems.
+      </p>
+      <p class="side-b">
+        I like remembering that the word comes from the Greek word “kybernetes,” which means “rudder,” or a device used to steer a boat. So you might think of cybernetics as “the art of steering.” You might also ask, “Why is steering an art?”
+      </p>
+      <p class="side-b">
+        The answer is that steering is a skill, a learned practice. When you drive a boat, you may have a destination in mind. But with the wind blowing, you may have to course-correct to get to where you intend to go. And you have to be paying
+        attention to whether the wind changes. There are many factors that can change how you steer.
+      </p>
+    </div>
+  </section>
+
+  <section id="three">
+    <div class="content">
+      <h2>Step 3. <br>Fold the plastic in half</h2>
+      <p>
+        Fold your plastic in half. Make sure to flatten the plastic so it’s smooth. You’ll want roughly a 3 ft by 3 ft area.
+      </p>
+      <p>
+        You should have one edge that’s the folded edge. This is the part we are working with. In a few steps, you will draw your design along this folded edge — which might remind you of making snowflakes out of paper.
+      </p>
+      <p class="chimes">
+        * * *
+      </p>
+      <figure class="medium-small">
+        <img src="images/_birdkite-fortune-dithered.png">
+      </figure>
+      <p class="side-b">
+        I received a fortune once that said, “We cannot direct the wind but we can adjust the sails.” As we already established, there are forces that we have no control over, but other elements are in our control. Take care to smooth out the
+        plastic.
+      </p>
+      <p class="side-b">
+        You’ll notice I’m using mostly transparent plastic here, but again, you could use whatever type of plastic you want, as long as it’s roughly medium grade and doesn’t have any holes. The first time I created a bird kite, it was actually black
+        because I made it from black trash bags. (This was intentional because I created it last spring 2020, when we were all in lockdown for the first time, and I was playing with how similar the word “covid” sounds to “corvid” — which is another
+        name for a crow.) More recently, I’ve also made bird kites from picnic table plastic, tablecloth plastic, and see-through yellow plastic, to name a few.
+      </p>
+    </div>
+  </section>
+
+  <section id="four">
+    <div class="content">
+      <h2>Step 4. <br>Draw half the bird shape on the plastic</h2>
+      <p>
+        First, test the bend of your dowels. There's a maximum bend any dowel can handle. Try feeling out this limit without breaking your dowel. It’s important to test this a little because you don't want a kite design that makes your dowels break because they were bent past their limit.
+      </p>
+      <p>
+        Next, envision how your dowels will be placed (4b) on the bird. One dowel will go straight down the middle. The curve of the other dowels will become the curve of your wings.
+      </p>
+      <p>
+        The next step is to draw the bird shape, and remember, because we are using the folded edge of the plastic, we are only drawing half of the bird shape. Here is how to do it: Place a dowel on the plastic and bend it in an arc. Use your permanent marker to draw along the curve of the dowel. This is the wing. At the top of this curve, add a triangle. The triangle is the head. To complete the half bird shape, add a rectangle at the bottom. This is the tail.
+      </p>
+      <p>
+        Note that I’m not giving specific measurements or even a specific pattern here because the shape of your bird is truly dependent on the type of dowels you have — their thickness, bendy-ness, and length. But the idea is to draw half the shape of a bird — roughly a triangle for the head, which is connected to a single curved wing, and then an angled rectangle for the tail.
+      </p>
+      <p>
+        I’m doing a lot of eyeballing here — again, there’s no one right way to create a kite, and no one perfect size.
+      </p>
+      <p class="chimes">
+        * * *
+      </p>
+      <p class="side-b">
+        I know it can be frustrating not to have exact directions but again, think of this as a recipe. It’s adaptable and the lack of perfect instructions means each person has to to figure it out on their own, or it will always remain a mystery. It will keep you present.
+      </p>
+      <p class="side-b">
+        Speaking of food and being present, one time I hosted a “water tasting.” I had two divisions — one for sparkling and one for still. I bought many waters, poured them into glasses that were labeled with numbers, and I had my guests describe them and try to guess which brands they corresponded to. I think we all were in awe of how much a simple water tasting made us feel “present”, in addition to how drastically different seemingly similar waters can be.
+      </p>
+      <p>
+    </div>
+  </section>
+
+  <section id="five">
+    <div class="content">
+      <h2>Step 5. <br>Cut out the bird from the plastic</h2>
+      <p>
+        Using your scissors, cut out the bird from the plastic.
+      </p>
+      <p>
+        Cutting might feel at first like a permanent step. But trust in trial and error.
+      </p>
+      <p class="chimes">
+        * * *
+      </p>
+      <p class="side-b">
+        I used to be intimidated by kites. I thought they needed to be mathematically precise in order to achieve the miracle of flight. But through making them, I learned that kites can be a lot more forgiving and that really all amazing creations come from a process of trial and error and iteration.
+      </p>
+      <p class="side-b">
+        My first bird kite probably wouldn’t have even happened had I not had the excuse and time constraint of a friend’s birthday. I remember feeling very intimidated — some bird kites that I found online looked so perfect flying in the sky, and one video I found said they would “happily fly for hours.”
+      </p>
+      <p class="side-b">
+        Looking back, I realize I flew my first bird kite upside-down — no wonder it didn’t fly that well. But in creating this tutorial on how to make a bird kite, I had to practice more. It always surprises me how teaching something is one of the best ways to learn.
+      </p>
+      <p>
+        Unfold it to see the full bird shape.
+      </p>
+    </div>
+  </section>
+
+  <section id="six">
+    <div class="content">
+      <h2>Step 6. <br>Apply your dowels to the bird</h2>
+      <p>
+        You’re about to tape four dowels to the plastic. The first is the “vertical spar,” which goes down the center of the bird. The second and third are the “spreader spars.” They will stretch from the wing tip to tail feathers on the opposite side. And the fourth is from wingtip to wingtip — another “spreader spar.”
+      </p>
+      <p>
+        The first one, the “vertical spar,” is straight, going down the center, from beak to tail feathers. You will likely need to cut the end of the dowel to make it fit nicely. It should only be as long as the length of the bird. Once it’s the right size and in the right position (completely centered), tape it on both ends and down the middle a few times.
+      </p>
+      <p class="chimes">
+        * * *
+      </p>
+      <p class="side-b">
+        Placing these dowels reminds me of their purpose — to give structure to the plastic so that it can “catch” the wind. I’m reminded of other designs that are meant to catch the wind — like the aeolian harp, which is a harp designed to be played by the breeze. Its name comes from Aeolus, the divine keeper of the winds in ancient Greek mythology. Its sound has been described as “ethereal” and “calmly spiritual”…
+      </p>
+      <p>
+        The next two dowels are called the “spreader spars.” They are curved and symmetrical to each other, going along each wing. They will start at the wingtip and end at the opposite side’s tail feather. Tape both ends strongly and along the dowel a few times. (Also — it’s fine if your dowel extends past your plastic near the tail feathers a bit — this could be a cool stylistic choice.)
+      </p>
+      <p class="chimes">
+        * * *
+      </p>
+      <p class="side-b">
+        Bird symbols are common to many wind myths across cultures. The psychologist Carl Jung (famous for dream interpretation) found this totally appropriate, suggesting that the “flight of a bird is reminiscent of intuition working its way up through the unconscious, making it the most fitting and accessible natural symbol of transcendence.”*
+      </p>
+      <p class="chimes">
+        * * *
+      </p>
+      <p class="side-b">
+        One of my favorite design mantras is to “keep your design sub-optimal to encourage evolution.” It’s related to the concept of “adaptive design,” which was described, in a presentation by the designer Dan Hill, as:
+      </p>
+      <blockquote class="side-b">
+        “about designing to enable the user to change things. You strive for 'good enough' as a starting point, such that the user feels they have a 'way in', almost an implicit goal of working through the finished design themselves. It sees design as a social process, developing over time, via a relationship with the user."
+      </blockquote>
+      </p>
+      <p class="side-b">
+        But it’s no wonder our society is scared to adapt designed things. We live in a world with an emphasis on “perfect” and optimization.
+      </p>
+      <p class="side-b">
+        And striving for imperfection is about embracing flexibility. Going back to wind for a moment… Wind is unpredictable, so nothing we make to work with the wind can be perfect. There are many possible conditions in which our design could exist.
+      </p>
+      <p>
+        The final, fourth dowel is technically optional. But it makes your bird look very cool. This dowel goes from wingtip to wingtip. You can tape it at each tip again and where it intersects the spreader spars.
+      </p>
+      <p class="side-b">
+        The very first kites were created many thousands of years ago in Asia, but with cloth instead of plastic. Many believe these first kites were also bird-shaped. An early reference, according to Lyall Watson, comes from a text from fourth century BC in China, which credits the engineer Kungshu Phan as the inventor of a “wooden bird” that flew for three days without descending.
+      </p>
+      <p class="side-b">
+        One of my favorite parts of making kites has been my conversations with my friend Austin Wade Smith, who has loved and flown kites for a long time now. Austin introduced me to the phrase, “kite punk,” which is all about an ultralight DIY aesthetic. Channel the idea of “kite punk.”
+      </p>
+    </div>
+  </section>
+
+  <section id="seven">
+    <div class="content">
+      <h2>Step 7. <br>Tie a string from wingtip to wingtip</h2>
+      <p>
+        To make your kite have 3D shape, cut off some of your flying string and tie each end to a wingtip. This will give your bird some volumetric form in the air.
+      </p>
+      <p class="chimes">
+        * * *
+      </p>
+      <p class="side-b">
+        I like this step because it gives the bird some “wave.” Like a sine wave…
+      </p>
+      <p class="side-b">
+        And waves remind me of surfing … and other activities… like wind-surfing, hang-gliding, parachuting… that people do for fun that actively involves the wind (and sometimes water).
+      </p>
+      <p class="side-b">
+        Lyall Watson wrote: “Everyone involved in a windgame has taken a huge step beyond urban confines, a move away from the alienation and monotony of climate control, which deadens the natural senses.”
+      </p>
+      <p class="side-b">
+        Not only is wind spiritual, but it’s fun. There’s this song called “Wave is Life” by Pardon Kimura, which I feel brings surfing and spirituality together.
+      </p>
+      <blockquote class="side-b">
+        I keep waiting for waitlessness<br>
+        The wave is life<br>
+        I'm going to ride on it<br>
+        Surfing is love<br>
+        I'm going to wave my weakness goodbye<br>
+        I don't have to be afraid of wiping out<br>
+        if I don't try to catch the big one,<br>
+        I'm stuck in the water anyway<br><br>
+
+        It's a loop<br>
+        I'm going to get out...<br>
+        to wait<br>
+        I'm going to wait...<br>
+        to surf<br>
+        I'm going to surf...<br>
+        to wipe out<br>
+        I'm going to wipe out...<br>
+        to get out<br>
+        and that's it
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="eight">
+    <div class="content">
+      <h2>Step 8. <br>Add the bird’s extended tail</h2>
+      <p>
+        Using spare plastic, create some long narrow strips. They should be at least 4 times the length of the kite itself and about 2 inches wide each.
+      </p>
+      <p>
+        The tail feathers are often overlooked — but they’re very important in the success of this kite.
+      </p>
+      <p class="chimes">
+        * * *
+      </p>
+      <p class="side-b">
+        Think of these as the pieces that will catch the ripple of gentle winds. Unlike strong winds, the strongest of which cause and help create hurricanes or tornadoes, gentle winds are not only mysterious but also wonderfully boring. Maybe what I mean by “boring” is that they’re everyday, they’re common… gentle winds are more human scale… they animate a plastic bag as if it were alive, causing us to pause… or they flow over our skin like a gentle massage, stimulating millions of nerve endings…
+      </p>
+      <p class="side-b">
+        As Lyall Watson put it, the gentle winds of the world have “never had the sort of press that ill winds receive. No catalogue exists of their individual virtues,” but many cultures have names for the breezes that stir the plants and grasses, for the “helper” winds that spread life across the planet by dispersing pollen and seeds.
+      </p>
+      <p class="side-b">
+        Wind provides a vital metaphor for any force in life that appears to come and go, yet effects real change on its inhabitants and their environments.
+      </p>
+      <p class="side-b">
+        Today, one might consider the internet full of modern winds: it’s easy to get swept in or up, even when it’s subtle. The internet's winds are invisible, but their effects are increasingly palpable and visible in our world.
+      </p>
+      <p class="side-b">
+        And as we’re increasingly surrounded by smartphones and more and more domestic objects with networked capabilities, the winds of the internet call chaotically for our attention. Unlike kites, which date back thousands of years, computers with the internet are relatively young technologies which (I think) desperately need further evolution in their design.
+      </p>
+      <p class="side-b">
+        Another design philosophy I reference often is “Calm Technology” — it declares calmness the fundamental challenge for all computational design for the era. How to deliver information to users rather than distract them further? Of course, not all technology needs to be calm; but currently too much design focuses on one thing while neglecting the opportunity that design has to illuminate surrounding context, environment, and the rest of the periphery.
+      </p>
+      <p>
+        Using tape, attach your strips of plastic to the end of your kite near the bird’s tail feathers. If you like, add even more strips for a beautiful effect — I liked adding three tails, one taped to each dowel. Note that this tail will be functional, and not just stylish. It helps to weigh the kite down to help it fly well.
+      </p>
+      <p class="chimes">
+        * * *
+      </p>
+      <blockquote class="side-b">
+        “Sailors were the first to quantify the wind, starting with descriptive terms such as ‘calm’ ‘breeze’ ‘gale’ and ‘storm.’ The English naval commander Francis Beaufort devised a scale in 1805 that we still use today. The scale began at 0, which was a wind speed too low to move the ship at all, and ended at number 12, which indicated a wind speed too high for the ship to carry any canvas.”
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="nine">
+    <div class="content">
+      <h2>Step 9. <br>Gather all your materials & bird</h2>
+      <p>
+        In preparation for flying, gather all your materials (scissors, tape, string, extra dowels, etc.) and your bird kite — maybe in a large bag for easy transport. You’ll want to bring these materials with you because you might need to make some adjustments once you actually fly your kite. I call this “kite surgery” — it’s totally normal, and part of the fun.
+      </p>
+    </div>
+  </section>
+
+  <section id="ten">
+    <div class="content">
+      <h2>Step 10. <br>Find a good place & time to fly & go!</h2>
+      <p>
+        Now that your kite is constructed, it’s time for your last ingredient: the wind. Choose an open area that feels often or consistently windy… a beach is usually a fine option. Parks can work too but winds are less guaranteed. I recommend researching online wind forecasts and scheduling your flight on a promisingly windy day.
+      </p>
+    </div>
+  </section>
+
+  <section id="eleven">
+    <div class="content">
+      <h2>Step 11. <br>Apply kite string to the bird</h2>
+      <p>
+        At your flying location, first hold up your bird kite and feel which way it wants to fly (11a). Then imagine where you might best attach your kite string. It is likely near the central heart of the bird, around where all the spars meet — somewhere along the central spar that feels most stable and centered. Hold the kite from this point.
+      </p>
+      <p>
+        Tape the end of your kite string to your kite (11b) securely at the central point you have just identified. With your back to the wind, slowly release the bird and see if it flies.
+      </p>
+      <p>
+        If that went well, remove the tape and use string to attach the line more securely (11c). To do this, poke two holes in your plastic with your scissors and thread the end of the kite string through, around the vertical spar, and back. (To make the plastic more resilient, you might consider applying electrical tape to the area before poking your holes.) Once you have your string through, make a secure knot. (If you’re feeling pro — do a “square knot” so you know it’s secure.)
+      </p>
+    </div>
+  </section>
+
+  <section id="twelve">
+    <div class="content">
+      <h2>Step 12. <br>Try flying your bird kite & adjust as necessary</h2>
+      <p>
+        Now, stand with your back to the wind, and let the kite string out as your bird rises into the sky…
+      </p>
+      <p>
+        Remember that wind is key. But winds change day to day. You might need to come back on  another day when there’s more wind. Or, if the wind isn’t strong, try running with your kite so it has a chance to get up into the air — most kites need some sort of running start in weaker winds. Or maybe the dimensions of your kite need a different string placement. Try some other things out with your bag of materials at the ready. Be willing to experiment and modify your bird kite.  Remember: “kite surgery” is good. The point is to be on the fly.
+      </p>
+      <p>
+        Have fun!
+      </p>
+    </div>
+  </section>
+
+
+  </main>
+  <!-- <script src="data.js"></script> -->
+  <!-- <script src="script2.js"></script> -->
+</body>
+
+</html>

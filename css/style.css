@@ -135,12 +135,19 @@ section {
 
 img {
   max-width: 100%;
+  image-rendering: pixelated;
 }
 
 nav#contents {
   position: absolute;
   top: 25px;
   left: 25px;
+}
+
+#music-controls {
+  position: absolute;
+  top: 20px;
+  right: 250px;
 }
 
 .html {
@@ -205,6 +212,7 @@ nav#contents {
   display: inline-block;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  animation-timing-function: steps(8, end);
 }
 
 @keyframes lineheightbreathing {
@@ -236,10 +244,10 @@ nav#contents {
 
 @keyframes leaf-Y {
   from {
-    transform: translateY(-2px)
+    transform: translateY(-1px)
   }
   to {
-    transform: translateY(2px)
+    transform: translateY(1px)
   }
 }
 
